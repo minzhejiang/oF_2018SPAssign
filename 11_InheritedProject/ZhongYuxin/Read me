@@ -1,0 +1,14 @@
+For this inherited project, I tried to make the game initially made by Yuemei more fun and challenging.
+Therefore, I made those mushrooms move! Specifically, 
+
+1. used array mSpeed[5] to store different speeds for each mushroom;
+2. used Perlin Noise to make speeds more random; 66-70
+3. when users get more carrots, mushrooms will move quicker; 162-184
+4. when mushrooms get to the boundaries of the canvas, they would automatically reverse the heading direction. 162-184
+
+
+Issues:
+1. Sometimes the game would be just over in the beginning because the locaitons of the frog and mushrooms are so random 
+that they may get so close with each other at the very start. I did have trouble in figureing out how to avoid that so far.
+2. I wrote the Perlin Noise in the Setup() to get relatively random speeds but I failed to use it in the Draw() to get 
+mushrooms move smoothly as I expected.
